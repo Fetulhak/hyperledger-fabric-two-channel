@@ -1,6 +1,8 @@
 # hyperledger-fabric-two-channel
 This repository demonstrates how to add organizations and create two channels by using hyperledger fabric test network.
 
+Note: Before you start download the folders and files found in this repo and replace the same file found in fabric-samples/test-network. These folders andxto files contain potential modifications done on the fabric test network architecture to suit the tutorial in this repo. Good Luck!!! 
+
 In order to add organizations to the test-network configuration given by the hyperledger fabric initial settings I have modified the following files. You can compare the modification by seeing the original files on the hyperledger fabric github source cde.
 
 1. The configtx.yaml file is modified to include additional 3 organization (Org3, Org4 and Org5) following similar settings to the already existing two organizations (Org1 and Org2). In this same file the profile section at the bottom is modified. I have used the same profile name "ChannelUsingRaft" as the original file but modified the organizations section in the application section to include all the organizations.
